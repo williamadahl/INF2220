@@ -8,7 +8,7 @@ class Ex9{
 
       Tree tree = new Tree();
       Scanner sc;
-      ArrayList<Node> list = new ArrayList<Node>();
+    //  ArrayList<Node> list = new ArrayList<Node>();
 
 
       // try{
@@ -36,12 +36,17 @@ class Ex9{
       tree.insert("g");
       tree.insert("b");
       tree.insert("B");
+      tree.insert("h");
+      tree.insert("e");
+
+
 
       TreeF ftree = new TreeF();
 
 
       tree.printTree(tree.root);
-
+      System.out.println("Depth left : " + tree.depthLeft(tree.root.left));
+      System.out.println("Depth right : " + tree.depthRight(tree.root.right));
 
   }
 }
